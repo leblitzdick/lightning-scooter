@@ -6,8 +6,9 @@ gets a qr-code generated which you can scan and pay with your mobile lightning A
 period is switched on. What is special about this system is that it is mobile, i.e. communication is via the mobile network.
 and the power supply comes from the batteries of the e-scooter.   
 
-![lscooter](img/IMG_20181212_150030.jpg)
 ![lscooter35c3](img/1.jpg)
+[![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
+
 
 
 ## How does it work?
