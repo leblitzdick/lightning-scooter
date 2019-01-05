@@ -28,8 +28,8 @@ funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probie
 
 
 [![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
-![Main](img/main.png)
-![QR](img/qr.png)
+![Main](img/IMG_20181228_164816.jpg)
+![QR](img/IMG_20181228_164839.jpg)
 ![Invoice](img/invoice.png)
 ![Payed](img/payed.png)
 ![Enjoy](img/enjoy.png)
