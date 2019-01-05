@@ -7,6 +7,8 @@ Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. 
 realisiert und die Stromversorgung kommt aus den Akkus des e-scooter.   
 
 ![lscooter35c3](img/1.jpg)
+[![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
+
 
 ## Wie funktioniert es?
 
