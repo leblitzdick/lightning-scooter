@@ -27,8 +27,7 @@ funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probie
 
 
 
-
-[![Lscooter-video]](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
+[![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 ![Main](img/main.png)
 ![QR](img/qr.png)
 ![Invoice](img/invoice.png)
