@@ -7,6 +7,8 @@ period is switched on. What is special about this system is that it is mobile, i
 and the power supply comes from the batteries of the e-scooter.   
 
 ![lscooter](img/IMG_20181212_150030.jpg)
+![lscooter35c3](img/1.jpg)
+
 
 ## How does it work?
 
@@ -27,6 +29,7 @@ the start screen is called and you can try it again.
 
 
 [![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
+![Main](img/IMG_20181228_164816.jpg)
 ![QR](img/IMG_20181228_164839.jpg)
 ![Invoice](img/invoice.png)
 ![Payed](img/payed.png)
