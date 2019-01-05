@@ -4,10 +4,10 @@ Der lightning-scooter ist ein e-scooter (Xiaomi m365) dessen elektrischer Antrie
 Es benutzt lightning als Zahlungssystem um diese Funktion zu aktivieren. Man wählt am Display aus wie lange man fahren möchte, 
 bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt und bezahlt, woraufhin der Strom für den gewählten
 Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
-realisiert und die Stromversorgung kommt aus den Akkus des e-scooter.    
+realisiert und die Stromversorgung kommt aus den Akkus des e-scooter.   
 
-![lscooter35c3](img/1.jpg)![lscooter](img/IMG_20181212_150030.jpg)
-
+![lscooter](img/IMG_20181212_150030.jpg)
+![lscooter35c3](img/1.jpg)
 
 ## Wie funktioniert es?
 
