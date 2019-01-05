@@ -7,7 +7,6 @@ period is switched on. What is special about this system is that it is mobile, i
 and the power supply comes from the batteries of the e-scooter.   
 
 ![lscooter](img/IMG_20181212_150030.jpg)
-&lt;font color="#ffff00"&gt;-==- proudly presents
 
 ## How does it work?
 
@@ -72,9 +71,3 @@ maybe there's something better. The relay for switching the current is classical
 
 I took a Xiaomi m365 because it is one of the most popular scooters on the market and is also used by commercial e-scooter rental companies.    
 
-
-
-
-
-
-Translated with www.DeepL.com/Translator
