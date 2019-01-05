@@ -6,7 +6,7 @@ bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt un
 Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
 realisiert und die Stromversorgung kommt aus den Akkus des e-scooter.    
 
-![Lbike](img/lbike.png)![Close_lbike](img/close_lbike.png)
+![main](img/main.jpg)![Close_lbike](img/close_lbike.png)
 
 
 ## Wie funktioniert es?
