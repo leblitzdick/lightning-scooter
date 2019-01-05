@@ -29,7 +29,6 @@ the start screen is called and you can try it again.
 
 
 
-[![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 ![Main](img/IMG_20181228_164816.jpg)
 ![QR](img/IMG_20181228_164839.jpg)
 ![Invoice](img/invoice.png)
