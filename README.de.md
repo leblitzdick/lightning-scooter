@@ -7,7 +7,7 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 ![2scooter](img/2scooter.png)
 
 
-Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit ![streamr] (https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
+Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit [streamr] (https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
 Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die streamr Platform über den Zustand des scooters zu informieren.
 
