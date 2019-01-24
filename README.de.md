@@ -16,10 +16,12 @@ Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und si
 
 Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Startbildschirm man momentan zwischen drei unterschiedlichen Nutzungszeiten, 1,3 und 5 Minuten, wählen kann. Pro Minute werden 250 satoshi verlangt das sind ca. 0,01€. 
 
+
 ![main](img/main.png)
 
 
 Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
+
 
 ![stream](img/stream.png)
 
@@ -27,6 +29,11 @@ Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel al
 Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels lightning-charge an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning Node zurück und  generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
 Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
 Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verworfen und das Programm kehrt zum Startbildschirm zurück, man kann es dann nochmal probieren.
+
+
+![qr](img/qr.png)
+
+
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
 
