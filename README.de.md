@@ -32,6 +32,8 @@ Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verwor
 
 
 ![qr](img/qr.png)
+![payed](img/payed.png)
+![enjoy](img/enjoy.png)
 
 
 
