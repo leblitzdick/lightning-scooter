@@ -35,13 +35,13 @@ Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verwor
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
 
-## streamr:
+## [streamr](https://www.streamr.com/):
 
 Bei jeder neuen Miete wird nun Informationen zu stream übertragen, dieser beinhaltet die folgenden Daten:
 
 ![stream](img/stream.png)
 
-In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an streamr übermittelt. Aus diesen Daten läßt sich mit dem streamr Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich z.B. über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete zuordnen kann. 
+In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten läßt sich mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich z.B. über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun ein z.B. ein Bewegungsprofil erzeugen. 
 
 ![canvas](img/canvas.png)
 
@@ -51,7 +51,16 @@ In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und 
 Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Modul besitzt ein GSM und ein GPS Modul und und ist somit für die Ortung als auch die Internetvebindung zuständig. 
 Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
 Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
-Die Stromzufuhr des 
+
+
+Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im oberen Bild ist er zu sehen, damit der Konverter nicht den Akkus entlädt ist ein Schalter verbaut der ihm von Akku trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das Schalen des Stroms zuständig sind. 
+
+![scooter-inside](img/scooter-inside.png)
+
+
+Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüssen am Raspbery Pi gehen. Der Stecker am rechten Rand der oberen Gehäuseschale führt die die Kontakte für die Relais und den Strom des Paspberry Pi welche aus dem Boden des Scooter kommen.
+
+![inside](img/inside.png)
 
 
 Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird [lightning-charge API](https://github.com/ElementsProject/lightning-charge) verwendet mit der sich sehr einfach die Programmierung der Bezahlungvorgänge umzusetzen ließ.
