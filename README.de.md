@@ -9,7 +9,7 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 
 Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
-Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die streamr Platform über den Zustand des scooters zu informieren.
+Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die [streamr](https://www.streamr.com/) Platform über den Zustand des scooters zu informieren.
 
 
 ## Wie funktioniert es?
@@ -20,6 +20,9 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 
 
 Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die streamer Plattform übermittelt. 
+
+![stream](img/stream.png)
+
 
 Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels lightning-charge an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning Node zurück und  generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
 Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
