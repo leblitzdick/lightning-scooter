@@ -1,4 +1,4 @@
-## ⚡lightning⚡ payable e-scooter & streamr support 
+## ⚡lightning⚡ payable e-scooter & [streamr](https://www.streamr.com/) support 
 
 Der lightning-scooter ist ein e-scooter dessen elektrischen Antrieb man für einen bestimmten Zeitraum buchen kann. 
 Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus wie lange man fahren möchte, bekommt einen qr-code generiert den man z.B. mit einer Handy lightning APP scannt und bezahlt. Dann wird der Strom für den gewählten Zeitraum eingeschaltet und man kann den scooter benutzen. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird vollständig über das Mobilfunknetzt realisiert.
@@ -7,7 +7,7 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 ![2scooter](img/2scooter.png)
 
 
-Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
+Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/)stre Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
 Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die streamr Platform über den Zustand des scooters zu informieren.
 
