@@ -1,20 +1,18 @@
-# ⚡lightning⚡ payable e-scooter
+# ⚡lightning⚡ payable e-scooter with streamr support 
 
-Der lightning-scooter ist ein e-scooter (Xiaomi m365) dessen elektrischer Antrieb man für einen bestimmten Zeitraum buchen kann. 
-Es benutzt lightning als Zahlungssystem um diese Funktion zu aktivieren. Man wählt am Display aus wie lange man fahren möchte, 
-bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt und bezahlt, woraufhin der Strom für den gewählten
-Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
-realisiert und die Stromversorgung kommt aus den Akkus des e-scooter.   
+Der lightning-scooter ist ein e-scooter dessen elektrischen Antrieb man für einen bestimmten Zeitraum buchen kann. 
+Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus wie lange man fahren möchte, bekommt einen qr-code generiert den man z.B. mit einer Handy lightning APP scannt und bezahlt. Dann wird der Strom für den gewählten Zeitraum eingeschaltet wird und man kann den scooter benutzen. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird vollständig über das Mobilfunknetzt realisiert.
 
-![lscooter35c3](img/1.jpg)
-[![Lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
+Zusätzlich zu meinen vorherigen Projekt dem lightning-bike, gibt es beim lightning-scooter eine Integration mit streamr, einer
+open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den
+lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
+
+Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die streamr Platform über den Zustand des scooters zu informieren.
 
 
 ## Wie funktioniert es?
 
-Der Client baut nach dem Bootvorgang automatisch mit einem GSM/GPRS GPIO HAT eine Verbindung ins Internet auf. Das Programm startet
-und das Display zeigt den Startbildschirm auf dem man momentan zwischen drei unterschiedlichen Zeiten der Benutzung wählen kann.
-Pro Minute werden 250 satoshi verlangt. 
+Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Startbildschirm man momentan zwischen drei unterschiedlichen Nutzungszeiten wählen kann. Pro Minute werden 250 satoshi verlangt. 
 
 Der Kunde wählt den Zeitraum und das Programm generiert eine Zahlungaufforderung, die mittels lightning-charge an den node des
 Servers übermittelt wird. Der Client bekommt die Zahlunginformationen vom Server zurück, generiert daraus einen qr-code welcher
@@ -27,12 +25,6 @@ aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück un
 funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probieren.
 
 
-
-![Main](img/IMG_20181228_164816.jpg)
-![QR](img/IMG_20181228_164839.jpg)
-![Invoice](img/invoice.png)
-![Payed](img/payed.png)
-![Enjoy](img/enjoy.png)
 
 ## Systemaufbau:
 
@@ -58,11 +50,10 @@ da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich
 - Netzwerkkabel
 
 ### Bauteile Client:
-- Raspberry Pi Zero WH
+- Raspberry A+ Zero WH
 - 16GB microSD Karte
 - Waveshare 2.7inch E-Ink display 264x176 px 
-- Waveshare GSM/GPRS/GNSS/Bluetooth HAT
-  (prepaid von Tchibo :-) (Provider Netz O2)
+- Waveshare GSM/GPRS/GNSS/Bluetooth HAT (Prepaid SIM card Provider Netz O2)
 - 2x 1 Kanal Relais 5V/230V
 - Yeeco DC/DC Konverter 8-50V 12V/24V/36V/48V bis 5V3A / 15W Wasserdichter
 - Selbst entworfenes Gehäuse aus PLA
