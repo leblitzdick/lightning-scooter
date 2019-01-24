@@ -19,7 +19,7 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 ![main](img/main.png)
 
 
-Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die streamer Plattform übermittelt. 
+Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
 
 ![stream](img/stream.png)
 
