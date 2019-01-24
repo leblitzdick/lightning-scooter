@@ -23,9 +23,6 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
 
 
-![stream](img/stream.png)
-
-
 Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels lightning-charge an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning Node zurück und  generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
 Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
 Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verworfen und das Programm kehrt zum Startbildschirm zurück, man kann es dann nochmal probieren.
@@ -33,11 +30,20 @@ Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verwor
 
 ![qr](img/qr.png)
 ![payed](img/payed.png)
+![enjoy](img/enjoy.png)
 
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
 
-![enjoy](img/enjoy.png)
+## streamr:
+
+Bei jeder neuen Miete wird nun Informationen zu stream übertragen, dieser beinhaltet die folgenden Daten:
+
+![stream](img/stream.png)
+
+In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an streamr übermittelt. Aus diesen Daten läßt sich mit dem streamr Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich z.B. über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete zuordnen kann. 
+
+![streamr-canvas](img/streamr-canvas.png)
 
 
 ## Systemaufbau:
