@@ -43,7 +43,7 @@ Bei jeder neuen Miete wird nun Informationen zu stream übertragen, dieser beinh
 
 In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an streamr übermittelt. Aus diesen Daten läßt sich mit dem streamr Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich z.B. über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete zuordnen kann. 
 
-![streamr-canvas](img/streamr-canvas.png)
+![canvas](img/canvas.png)
 
 
 ## Systemaufbau:
