@@ -7,9 +7,7 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 ![2scooter](img/2scooter.png)
 
 
-Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit streamr, einer
-open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den
-lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
+Zusätzlich zu meinen vorherigen Projekt, dem lightning-bike, gibt es beim lightning-scooter eine Integration mit ![streamr] (https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
 Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die streamr Platform über den Zustand des scooters zu informieren.
 
@@ -17,6 +15,9 @@ Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und si
 ## Wie funktioniert es?
 
 Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Startbildschirm man momentan zwischen drei unterschiedlichen Nutzungszeiten, 1,3 und 5 Minuten, wählen kann. Pro Minute werden 250 satoshi verlangt das sind ca. 0,01€. 
+
+![main](img/main.png)
+
 
 Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die streamer Plattform übermittelt. 
 
