@@ -33,21 +33,22 @@ Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verwor
 
 ![qr](img/qr.png)
 ![payed](img/payed.png)
-![enjoy](img/enjoy.png)
-
 
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
 
+![enjoy](img/enjoy.png)
+
+
 ## Systemaufbau:
 
 Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Modul besitzt ein GSM und ein GPS Modul und und ist somit für die Ortung als auch die Internetvebindung zuständig. 
-Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode https://github.com/Emeryth/ReadM365 angepasst. 
+Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
 Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 Die Stromzufuhr des 
 
 
-Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node spruned die Bitcoin Blockchain vorhält und ein auf c-lightning https://github.com/ElementsProject/lightning basierender lightning node. Für die Steuerung des lightning nodes wird lightning-charge API https://github.com/ElementsProject/lightning-charge verwendet mit der sich sehr einfach die Programmierung der Bezahlungvorgänge umzusetzen ließ.
+Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird [lightning-charge API](https://github.com/ElementsProject/lightning-charge) verwendet mit der sich sehr einfach die Programmierung der Bezahlungvorgänge umzusetzen ließ.
 
 Auf beide Raspberry Pi Systeme die aktuellen raspbian strech lite Distribution. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python2.7 geschrieben.
 
@@ -70,7 +71,8 @@ Auf beide Raspberry Pi Systeme die aktuellen raspbian strech lite Distribution. 
 - Kabel, Lötzinn, Heißkleber, Montageband usw.
 
 
-
+### Scooter:
+ - [Xiaomi M365](https://www.mi.com/global/mi-electric-scooter/)
 
 
 
