@@ -55,8 +55,7 @@ Wird die Bezahlung innerhalb der 60 Sek. nicht bestätigt, werden die Daten verw
 ![enjoy](img/enjoy.png)
 
 
-Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
-
+Hat die Bezahlung funktioniert wird die Internet Verbindung abgebaut und der Strom vom System für die gewählt Zeit eingeschaltet.  Der scooter ist jetzt bereit und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - natürlich rollt er weiter, aber eben nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit für einen neuen Mietvorgang. 
 
 
 ## Systemaufbau:
