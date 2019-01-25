@@ -35,9 +35,10 @@ of the stream:
 ![stream](img/stream.png)
 
 
-In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to [streamr](https://www.streamr.com/). From this data I created a canvas with the streamr editor which collects the data from the stream. 
-It is now possible to visualize the GPS data in the canvas via the map module, so that the locations of the rent can be 
-displayed. Since also date and time can be captured now e.g. motion profiles can be generated.
+In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to [streamr]
+(https://www.streamr.com/). From this data I created a canvas with the [streamr](https://www.streamr.com/) editor which collects
+the data from the stream. It is now possible to visualize the GPS data in the canvas via the map module, so that the locations 
+of the rent can be displayed. Since also date and time can be captured now e.g. motion profiles can be generated.
 
 ![canvas](img/canvas.png)
 
