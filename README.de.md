@@ -6,6 +6,13 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 ![1scooter](img/1scooter.png)
 ![2scooter](img/2scooter.png)
 
+Auf dem [35C3](https://events.ccc.de/category/congress/35c3/) habe ich den lighning-scooter zum mieten angeboten, es wurde sehr gut angenommen. 
+
+
+
+Hier ein kleines Video vom Buchungsvorgang, damals allerdingd noch ohne steamr Funktionen.
+
+
 
 Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
