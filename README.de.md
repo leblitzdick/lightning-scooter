@@ -79,8 +79,8 @@ Auf beide Raspberry Pi Systemen die aktuellen raspbian strech lite Distribution 
 ### Bauteile Client:
 - Raspberry Pi 3 A+
 - 16GB microSD Karte
-- Waveshare 2.7inch E-Ink display 264x176 px 
-- Waveshare GSM/GPRS/GNSS/Bluetooth HAT (Prepaid SIM card Provider Netz O2)
+- [Waveshare 2.7inch E-Ink display 264x176 px](https://www.waveshare.com/2.7inch-e-paper-hat.htm) 
+- [Waveshare GSM/GPRS/GNSS/Bluetooth HAT](https://www.waveshare.com/wiki/GSM/GPRS/GNSS_HAT) (Prepaid SIM card Provider Netz O2)
 - 2x 1 Kanal Relais 5V/230V
 - Yeeco DC/DC Konverter 8-50V 12V/24V/36V/48V bis 5V3A / 15W Wasserdichter
 - Selbst entworfenes Gehäuse aus PLA
