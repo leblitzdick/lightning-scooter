@@ -18,7 +18,7 @@ Hier ein kleines Video vom Buchungsvorgang:
 
 Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
 
-Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und sich jederzeit online über die [streamr](https://www.streamr.com/) Platform über den Zustand des scooters zu informieren.
+Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die [streamr](https://www.streamr.com/) Platform Informationen über den scooter zu erhlaten.
 
 
 ## Wie funktioniert es?
@@ -29,12 +29,12 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 ![main](img/main.png)
 
 
-Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden die aktuellen Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
+Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden aktuelle Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die gesammelten Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
 
 
-Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels lightning-charge an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning Node zurück und  generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
-Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
-Hat die Bezahlung innhalb der 60 Sek. nicht funktioniert werden die Daten verworfen und das Programm kehrt zum Startbildschirm zurück, man kann es dann nochmal probieren.
+Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels [lightning-charge](https://github.com/ElementsProject/lightning-charge) an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning node zurück und generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
+Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und dann zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
+Wird die Bezahlung innerhalb der 60 Sek. nicht bestätigt, werden die Daten verworfen und das Programm kehrt zum Startbildschirm zurück. Hier hat man dann die Möglichkeit den Vorgang zu wiederholen.
 
 
 ![qr](img/qr.png)
@@ -46,11 +46,11 @@ Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit 
 
 ## [streamr](https://www.streamr.com/):
 
-Bei jeder neuen Miete wird nun Informationen zu stream übertragen, dieser beinhaltet die folgenden Daten:
+Bei jedem neuen Mietevorgang werden nun Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen der übertragen wird:
 
 ![stream](img/stream.png)
 
-In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten läßt sich mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun z.B. ein Bewegungsprofil erzeugen. 
+In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun z.B. ein Bewegungsprofil erzeugen. 
 
 ![canvas](img/canvas.png)
 
