@@ -4,3 +4,28 @@ The lightning-scooter is an e-scooter whose electric drive can be booked for a c
 Lightning is used. You choose on the display how long you want to drive, get a qr-code generated which you scan with a mobile 
 phone lightning APP and pay. Then the power is switched on for the selected period and you can use the scooter. The special 
 thing about this system is that it is mobile, i.e. the communication is completely realized via the mobile network.
+
+On the 35C3 I offered the lightning-scooter for rent, it was a success.
+
+Here is a small video of the booking process:
+
+## streamr:
+
+In addition to my previous project, the lightning-bike, the lightning-scooter has an integration with streamr, an open-source 
+platform for the worldwide exchange of real-time data. Now every time you make a booking, data about the lightning-scooter is 
+transmitted to the streamr network, including date, location, battery charge status and much more.
+
+It is thus possible to document the use of the lightning-scooter and to receive information about the scooter online via the 
+streamr platform at any time.
+
+The following information is transferred to streamr during every new rental process, in the next picture you can see the content of
+the stream:
+
+In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to streamr. From this
+data I created a canvas with the streamr editor which collects the data from the stream. It is now possible to visualize the GPS
+data in the canvas via the map module, so that the locations of the rent can be displayed. Since also date and time can be captured
+now e.g. motion profiles can be generated.
+
+## How does it work?
+
+After the boot process, the client automatically starts the program on whose start screen you can currently choose between three different usage times, 1, 3 and 5 minutes. The costs per minute are 250 satoshi that is approx. 0.01€.
