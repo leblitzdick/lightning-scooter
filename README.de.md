@@ -55,6 +55,8 @@ In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minu
 ![canvas](img/canvas.png)
 
 
+
+
 ## Systemaufbau:
 
 Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Modul besitzt ein GSM und ein GPS Modul und und ist somit für die Ortung als auch die Internetvebindung zuständig. 
