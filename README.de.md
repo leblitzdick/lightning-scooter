@@ -63,9 +63,10 @@ Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüss
 ![inside](img/inside.png)
 
 
-Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird [lightning-charge API](https://github.com/ElementsProject/lightning-charge) verwendet mit der sich sehr einfach die Programmierung der Bezahlungvorgänge umzusetzen ließ.
+Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungvorgänge umzusetzen.
 
-Auf beide Raspberry Pi Systeme die aktuellen raspbian strech lite Distribution. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python2.7 geschrieben.
+Auf beide Raspberry Pi Systemen die aktuellen raspbian strech lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python2.7 geschrieben.
+
 
 ### Bauteile Server:
 - Raspberry Pi 3 A+
@@ -76,7 +77,7 @@ Auf beide Raspberry Pi Systeme die aktuellen raspbian strech lite Distribution. 
 - Netzwerkkabel
 
 ### Bauteile Client:
-- Raspberry A+ Zero WH
+- Raspberry Pi 3 A+
 - 16GB microSD Karte
 - Waveshare 2.7inch E-Ink display 264x176 px 
 - Waveshare GSM/GPRS/GNSS/Bluetooth HAT (Prepaid SIM card Provider Netz O2)
