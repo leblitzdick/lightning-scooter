@@ -1,3 +1,3 @@
-# ⚡lightning⚡ payable e-scooter mit streamr support
+## ⚡lightning⚡ payable e-scooter mit streamr support
 
 The lightning-scooter is an e-scooter whose electric drive can be booked for a certain period of time. For the payment Bitcoin Lightning is used. You choose on the display how long you want to drive, get a qr-code generated which you scan with a mobile phone lightning APP and pay. Then the power is switched on for the selected period and you can use the scooter. The special thing about this system is that it is mobile, i.e. the communication is completely realized via the mobile network.
