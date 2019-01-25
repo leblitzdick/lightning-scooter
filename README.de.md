@@ -58,9 +58,10 @@ In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minu
 ## Systemaufbau:
 
 Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Modul besitzt ein GSM und ein GPS Modul und und ist somit für die Ortung als auch die Internetvebindung zuständig. 
-Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
-Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 
+Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
+
+Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 
 Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akkus entlädt ist ein Schalter verbaut der ihn von Akku trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das Schalen des Stroms zuständig sind. 
 
