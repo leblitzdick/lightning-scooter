@@ -17,6 +17,22 @@ Hier ein kleines Video vom Buchungsvorgang:
 
 
 
+## [streamr](https://www.streamr.com/):
+
+Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
+
+Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die [streamr](https://www.streamr.com/) Platform Informationen über den scooter zu erhlaten.
+
+Bei jedem neuen Mietevorgang werden folgende Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen:
+
+![stream](img/stream.png)
+
+In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegt welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da auch Datum und Uhrzeit erfaßt werden können nun z.B. Bewegungsprofile erzeugt werden. 
+
+![canvas](img/canvas.png)
+
+
+
 ## Wie funktioniert es?
 
 Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Startbildschirm man momentan zwischen drei unterschiedlichen Nutzungszeiten, 1,3 und 5 Minuten, wählen kann. Pro Minute werden 250 satoshi verlangt das sind ca. 0,01€. 
@@ -40,19 +56,6 @@ Wird die Bezahlung innerhalb der 60 Sek. nicht bestätigt, werden die Daten verw
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit wird die Stromzufuhr unterbrochen und die Miete ist beendet - man kann natürlich weiter rollern, aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und und ist bereit von neuem zu starten. 
 
-## [streamr](https://www.streamr.com/):
-
-Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezuustand und noch einiges mehr.
-
-Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die [streamr](https://www.streamr.com/) Platform Informationen über den scooter zu erhlaten.
-
-Bei jedem neuen Mietevorgang werden folgende Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen:
-
-![stream](img/stream.png)
-
-In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegt welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da auch Datum und Uhrzeit erfaßt werden können nun z.B. Bewegungsprofile erzeugt werden. 
-
-![canvas](img/canvas.png)
 
 
 ## Systemaufbau:
