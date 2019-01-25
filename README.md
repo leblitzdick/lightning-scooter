@@ -100,7 +100,7 @@ scooter.
 ![inside](img/inside.png)
 
 
-On the server side there is a Raspberry Pi 3B on which the pseudo node [sPRUNED](https://github.com/gdassori/spruned) provides the Bitcoin blockchain and a [c-lightning](https://github.com/ElementsProject/lightning) based lightning node. For the control of the lightning node the API [lightning-charge](https://github.com/ElementsProject/lightning-charge) is used. It was very easy to implement the programming of the payment processes.
+On the server side there is a Raspberry Pi 3B on which the pseudo node [sPRUNED](https://github.com/gdassori/spruned) provides the Bitcoin blockchain and a [c-lightning](https://github.com/ElementsProject/lightning) based lightning node. For the control of the lightning node the API [lightning-charge](https://github.com/ElementsProject/lightning-charge) is used because it's very easy to implement the payment processes.
 
 The current raspbian strech lite distribution is installed on both Raspberry Pi systems. The program code to control the lightning-scooter is written in python.
 
