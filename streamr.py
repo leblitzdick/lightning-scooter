@@ -1,5 +1,17 @@
-#!/usr/bin/python
-# Filename: test-pppd.py
+##
+#
+# lightning-scooter : An e-scooter whose electrical support can be booked for a certain period and paid with lightning.
+#
+#   @filename       :   streamr.py
+#   @brief          :   communication with streamr platform
+#   @author         :   Matthias Steinig
+#
+#   Folders
+#          img      :   basic Images to display
+#          tmp      :   where the composed pictures are
+#
+#   
+##
 
 import serial
 import time
@@ -18,7 +30,7 @@ from binascii import hexlify
 
 gpsData = ""
 
-REMOTE_SERVER = "triton739.server4you.de"
+REMOTE_SERVER = "xxx.xxx.xxx.xxx"
 
 streamr_stream =  {
                   "timestamp"                : "date",
