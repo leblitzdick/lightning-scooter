@@ -50,3 +50,21 @@ time. The scooter is now ready to go! After the end of the paid time the power s
 of course it rolls on, but only with muscle power. The program returns to the start screen and is ready for a new rental 
 process.
 
+## System structure:
+
+The heart of the system is a Raspberry Pi 3 A+, which is supplemented by a GSM/GPRS/GNSS HAT. This component has a GSM and a GPS
+module and is therefore responsible for the positioning as well as the Internet connection.
+
+The relays for controlling the power supply are controlled by the GPIOs of the Raspberrypi Pi. The Bluetooth module reads the
+information from the scooter. Here I have adapted the program code from this repository ReadM365.
+
+An e-paper display is used as monitor, which also provides 4 switches for the menu control. These are also queried via
+the GPIOs of the Raspberry Pi. The e-paper display has the advantage that it consumes almost no power in display mode but only
+when the image content changes. It has a high contrast and is easy to read even on sunny days. The picture construction is 
+relatively tough with approx. 6 sec., but only 2 steps/pictures are needed to complete the payment process.
+
+For the power supply of the Raspberry Pi it was necessary to install a DC/DC converter which provides the required 5V from the 
+42V of the scooter battery. In the lower picture you can see it, so that the converter does not discharge the battery, a switch
+is installed which separates it from the current. In this picture you can also see the two blue relays which are responsible for
+switching the current.
+
