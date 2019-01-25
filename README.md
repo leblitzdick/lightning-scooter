@@ -1,4 +1,4 @@
-## ⚡lightning⚡ payable e-scooter with [streamr](https://www.streamr.com/) support
+## ⚡lightning⚡ payable e-scooter with  [![streamrLogo](img/streamrLogo.png)](https://www.streamr.com/)[streamr](https://www.streamr.com/) support
 
 The lightning-scooter is an e-scooter whose electric drive can be booked for a certain period of time. For the payment Bitcoin
 Lightning is used. You choose on the display how long you want to drive, get a qr-code generated which you scan with a mobile 
@@ -19,7 +19,7 @@ Here is a small video of the booking process:
 [![lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 
 
-## streamr:
+##  [![streamrLogo](img/streamrLogo.png)](https://www.streamr.com/)streamr:
 
 In addition to my previous project, the lightning-bike, the lightning-scooter has an integration with streamr, an open-source 
 platform for the worldwide exchange of real-time data. Now every time you make a booking, data about the lightning-scooter is 
