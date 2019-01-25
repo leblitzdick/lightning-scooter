@@ -12,9 +12,11 @@ thing about this system is that it is mobile, i.e. the communication is complete
 
 On the [35C3](https://events.ccc.de/category/congress/35c3/) I offered the lightning-scooter for rent, it was a success.
 
+![35C3](img/35C3.png)
+
 Here is a small video of the booking process:
 
-![35C3](img/35C3.png)
+[![lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 
 
 ## streamr:
@@ -26,8 +28,8 @@ transmitted to the streamr network, including date, location, battery charge sta
 It is thus possible to document the use of the lightning-scooter and to receive information about the scooter online via the 
 streamr platform at any time.
 
-The following information is transferred to streamr during every new rental process, in the next picture you can see the content of
-the stream:
+The following information is transferred to streamr during every new rental process, in the next picture you can see the content
+of the stream:
 
 In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to streamr. From this
 data I created a canvas with the streamr editor which collects the data from the stream. It is now possible to visualize the GPS
