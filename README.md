@@ -47,13 +47,14 @@ of the rent can be displayed. Since also date and time can be captured now e.g. 
 After the boot process, the client automatically starts the program on whose start screen you can currently choose between three
 different usage times, 1, 3 and 5 minutes. The costs per minute are 250 satoshi that is approx. 0.01€.
 
+![main](img/main.png)
+
 The customer now selects the desired rental time and the program first determines the exact position of the scooter via GPS.
 Then the current status data of the scooter is read out via Bluetooth. An internet connection is then established and the
-collected information is transmitted to the streamr platform.
+collected information is transmitted to the [streamr](https://www.streamr.com/) platform.
 
-In the second step, an invoice is generated for the requested amount, which is transmitted to the lightning node via lightning-
-charge. The client gets the payment information back from the lightning node and generates a qr-code which is shown to the
-customer on the display.
+In the second step, an invoice is generated for the requested amount, which is transmitted to the lightning node via [lightning-charge](https://github.com/ElementsProject/lightning-charge). The client gets the payment information back from the lightning
+node and generates a qr-code which is shown to the customer on the display.
 
 The customer now has 60 seconds to scan the qr-code with his lightning APP in his mobile phone and then pay th invoice. During
 this time the client tests the lightning node to see if the invoice is marked as paid.
