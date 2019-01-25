@@ -46,31 +46,29 @@ Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.co
 
 Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die [streamr](https://www.streamr.com/) Platform Informationen über den scooter zu erhlaten.
 
-Bei jedem neuen Mietevorgang werden nun Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen der übertragen wird:
+Bei jedem neuen Mietevorgang werden folgende Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen:
 
 ![stream](img/stream.png)
 
-In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun z.B. ein Bewegungsprofil erzeugen. 
+In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegt welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da auch Datum und Uhrzeit erfaßt werden können nun z.B. Bewegungsprofile erzeugt werden. 
 
 ![canvas](img/canvas.png)
 
 
-
-
 ## Systemaufbau:
 
-Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Modul besitzt ein GSM und ein GPS Modul und und ist somit für die Ortung als auch die Internetvebindung zuständig. 
+Herz des System ist ein Raspberry Pi 3 A+, welcher durch einen GSM/GPRS/GNSS HAT ergänzt wird. Dieses Bauteil besitzt ein GSM und ein GPS Modul und ist somit sowohl für die Ortung als auch die Internetvebindung zuständig. 
 
-Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi angegesteuert und das bluetooth Modul für das Auslesen der Informationen aus dem scooter. Hier habe ich als Vorlage diesen Programmcode [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
+Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des Raspberrypi Pi angegesteuert. Mit dem bluetooth Modul werden die Informationen aus dem scooter ausgelesen. Hier habe ich den Programmcode aus diesem Repository [ReadM365](https://github.com/Emeryth/ReadM365) angepasst. 
 
-Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
+Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des Raspberry Pi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 
-Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akkus entlädt ist ein Schalter verbaut der ihn von Akku trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das Schalen des Stroms zuständig sind. 
+Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akku entlädt ist ein Schalter verbaut der ihn vom Strom trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das schalten des Stroms zuständig sind. 
 
 ![scooter-inside](img/scooter-inside.png)
 
 
-Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüssen am Raspbery Pi gehen. Der Stecker am rechten Rand der oberen Gehäuseschale führt die die Kontakte für die Relais und den Strom des Paspberry Pi welche aus dem Boden des Scooter kommen.
+Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüssen am Raspbery Pi gehen. Der Stecker am rechten Rand der oberen Gehäuseschale führt die Kontakte der Relais und den Strom des Paspberry Pi welche alle aus dem Boden des scooter's kommen.
 
 ![inside](img/inside.png)
 
