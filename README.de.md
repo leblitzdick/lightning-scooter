@@ -78,7 +78,7 @@ Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüss
 
 Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungsvorgänge umzusetzen.
 
-Auf beide Raspberry Pi Systemen die aktuellen raspbian strech lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python2.7 geschrieben.
+Auf beide Raspberry Pi Systemen ist die aktuellen raspbian strech lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python geschrieben.
 
 
 ### Bauteile Server:
