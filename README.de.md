@@ -6,7 +6,7 @@ Für die Bezahlung wird Bitcoin Lightning verwendet. Man wählt am Display aus w
 ![1scooter](img/1scooter.png)
 ![2scooter](img/2scooter.png)
 
-Auf dem [35C3](https://events.ccc.de/category/congress/35c3/) habe ich den lighning-scooter zum mieten angeboten, er wurde sehr gut angenommen. 
+Auf dem [35C3](https://events.ccc.de/category/congress/35c3/) habe ich den lightning-scooter zum mieten angeboten, er wurde sehr gut angenommen. 
 
 ![35C3](img/35C3.png)
 
