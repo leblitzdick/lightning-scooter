@@ -10,7 +10,7 @@ thing about this system is that it is mobile, i.e. the communication is complete
 ![2scooter](img/2scooter.png)
 
 
-On the [35C3](https://events.ccc.de/category/congress/35c3/) I offered the lightning-scooter for rent, it was a success.
+On the [35C3](https://events.ccc.de/category/congress/35c3/) I offered the lightning-scooter for rent, it was a great success.
 
 ![35C3](img/35C3.png)
 
