@@ -62,6 +62,10 @@ this time the client tests the lightning node to see if the invoice is marked as
 If the payment is not confirmed within 60 seconds, the data is discarded and the program returns to the start screen. Here you
 have the possibility to repeat the process.
 
+![qr](img/qr.png)
+![payed](img/payed.png)
+![enjoy](img/enjoy.png)
+
 If the payment has worked, the Internet connection will be disconnected and the system will turn on the power for the selected
 time. The scooter is now ready to go! After the end of the paid time the power supply is interrupted and the rent is finished -
 of course it rolls on, but only with muscle power. The program returns to the start screen and is ready for a new rental 
@@ -73,7 +77,7 @@ The heart of the system is a Raspberry Pi 3 A+, which is supplemented by a GSM/G
 module and is therefore responsible for the positioning as well as the Internet connection.
 
 The relays for controlling the power supply are controlled by the GPIOs of the Raspberrypi Pi. The Bluetooth module reads the
-information from the scooter. Here I have adapted the program code from this repository ReadM365.
+information from the scooter. Here I have adapted the program code from this repository [ReadM365](https://github.com/Emeryth/ReadM365).
 
 An e-paper display is used as monitor, which also provides 4 switches for the menu control. These are also queried via
 the GPIOs of the Raspberry Pi. The e-paper display has the advantage that it consumes almost no power in display mode but only
@@ -85,26 +89,32 @@ For the power supply of the Raspberry Pi it was necessary to install a DC/DC con
 is installed which separates it from the current. In this picture you can also see the two blue relays which are responsible for
 switching the current.
 
+![scooter-inside](img/scooter-inside.png)
+
+
 Here you can see the wiring going from the e-paper display to the connectors on the Raspbery Pi. The connector on the right side
 of the upper shell leads the contacts of the relays and the current of the Paspberry Pi, which all come from the bottom of the 
 scooter.
 
 
+![inside](img/inside.png)
 
 
 On the server side there is a Raspberry Pi 3B on which the pseudo node sPRUNED provides the Bitcoin blockchain and a c-lightning based lightning node. For the control of the lightning node the API lightning-charge is used. It was very easy to implement the programming of the payment processes.
 
 The current raspbian strech lite distribution is installed on both Raspberry Pi systems. The actual program to control the lightning-scooter is written in python.
-Components Server:
 
-    Raspberry Pi 3 A+
-    16GB microSD card
-    Standard housing black
-    microUSB cable
-    power supply
-    network cables
+### Components Server:
 
-Components Client:
+- Raspberry Pi 3 A+
+- 16GB microSD card
+- standard case
+- microUSB cable
+- power supply
+- network cable
+
+
+### Components Client:
 
     Raspberry Pi 3 A+
     16GB microSD card
