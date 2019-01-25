@@ -66,7 +66,7 @@ Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des Raspberrypi 
 
 Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischerweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des Raspberry Pi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 
-Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akku entlädt ist ein Schalter verbaut der ihn vom Strom trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das schalten des Stroms zuständig sind. 
+Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akku entlädt ist ein Schalter verbaut der ihn vom Strom trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das schalten des Stroms zuständig sind. 
 
 ![scooter-inside](img/scooter-inside.png)
 
