@@ -100,9 +100,9 @@ scooter.
 ![inside](img/inside.png)
 
 
-On the server side there is a Raspberry Pi 3B on which the pseudo node sPRUNED provides the Bitcoin blockchain and a c-lightning based lightning node. For the control of the lightning node the API lightning-charge is used. It was very easy to implement the programming of the payment processes.
+On the server side there is a Raspberry Pi 3B on which the pseudo node [sPRUNED](https://github.com/gdassori/spruned) provides the Bitcoin blockchain and a [c-lightning](https://github.com/ElementsProject/lightning) based lightning node. For the control of the lightning node the API [lightning-charge](https://github.com/ElementsProject/lightning-charge) is used. It was very easy to implement the programming of the payment processes.
 
-The current raspbian strech lite distribution is installed on both Raspberry Pi systems. The actual program to control the lightning-scooter is written in python.
+The current raspbian strech lite distribution is installed on both Raspberry Pi systems. The program code to control the lightning-scooter is written in python.
 
 ### Components Server:
 
@@ -116,15 +116,15 @@ The current raspbian strech lite distribution is installed on both Raspberry Pi 
 
 ### Components Client:
 
-    Raspberry Pi 3 A+
-    16GB microSD card
-    Waveshare 2.7inch E-Ink display 264x176 px
-    Waveshare GSM/GPRS/GNSS/Bluetooth HAT (Prepaid SIM card Provider Network O2)
-    2x 1 channel relay 5V/230V
-    Yeeco DC/DC Converter 8-50V 12V/24V/36V/48V to 5V3A / 15W Watertight
-    Self-designed housing made of PLA
-    Cable, solder, hot glue, mounting tape, etc.
+- Raspberry Pi 3 A+
+- 16GB microSD card
+- [Waveshare 2.7inch E-Ink display 264x176 px](https://www.waveshare.com/2.7inch-e-paper-hat.htm)    
+- [Waveshare GSM/GPRS/GNSS/Bluetooth HAT](https://www.waveshare.com/wiki/GSM/GPRS/GNSS_HAT) (Prepaid SIM card Provider Network O2)
+- 2x 1 channel relay 5V/230V
+- Yeeco DC/DC Converter 8-50V 12V/24V/36V/48V to 5V3A / 15W Watertight
+- Self-designed case made of PLA
+- Cable, solder, hot glue, mounting tape, etc.
 
-Scooter:
+### Scooter:
 
-    Xiaomi M365
+- [Xiaomi M365](https://www.mi.com/global/mi-electric-scooter/)
