@@ -44,7 +44,9 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden aktuelle Status Daten des scooters per bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die gesammelten Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
 
 Im zweiten Schritt wird eine Zahlungaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels [lightning-charge](https://github.com/ElementsProject/lightning-charge) an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning node zurück und generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
+
 Der Kunde hat nun 60 Sek. Zeit den qr-code mit seiner lightning APP im Handy zu scannen und dann zu bezahlen. Solange testet der Client beim lightning node ob die Rechnung als bezahlt markiert ist. 
+
 Wird die Bezahlung innerhalb der 60 Sek. nicht bestätigt, werden die Daten verworfen und das Programm kehrt zum Startbildschirm zurück. Hier hat man dann die Möglichkeit den Vorgang zu wiederholen.
 
 
