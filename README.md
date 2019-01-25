@@ -1,13 +1,21 @@
-## ⚡lightning⚡ payable e-scooter mit streamr support
+## ⚡lightning⚡ payable e-scooter with [streamr](https://www.streamr.com/) support
 
 The lightning-scooter is an e-scooter whose electric drive can be booked for a certain period of time. For the payment Bitcoin
 Lightning is used. You choose on the display how long you want to drive, get a qr-code generated which you scan with a mobile 
 phone lightning APP and pay. Then the power is switched on for the selected period and you can use the scooter. The special 
 thing about this system is that it is mobile, i.e. the communication is completely realized via the mobile network.
 
-On the 35C3 I offered the lightning-scooter for rent, it was a success.
+
+![1scooter](img/1scooter.png)
+![2scooter](img/2scooter.png)
+
+
+On the [35C3](https://events.ccc.de/category/congress/35c3/) I offered the lightning-scooter for rent, it was a success.
 
 Here is a small video of the booking process:
+
+![35C3](img/35C3.png)
+
 
 ## streamr:
 
@@ -68,3 +76,36 @@ For the power supply of the Raspberry Pi it was necessary to install a DC/DC con
 is installed which separates it from the current. In this picture you can also see the two blue relays which are responsible for
 switching the current.
 
+Here you can see the wiring going from the e-paper display to the connectors on the Raspbery Pi. The connector on the right side
+of the upper shell leads the contacts of the relays and the current of the Paspberry Pi, which all come from the bottom of the 
+scooter.
+
+
+
+
+On the server side there is a Raspberry Pi 3B on which the pseudo node sPRUNED provides the Bitcoin blockchain and a c-lightning based lightning node. For the control of the lightning node the API lightning-charge is used. It was very easy to implement the programming of the payment processes.
+
+The current raspbian strech lite distribution is installed on both Raspberry Pi systems. The actual program to control the lightning-scooter is written in python.
+Components Server:
+
+    Raspberry Pi 3 A+
+    16GB microSD card
+    Standard housing black
+    microUSB cable
+    power supply
+    network cables
+
+Components Client:
+
+    Raspberry Pi 3 A+
+    16GB microSD card
+    Waveshare 2.7inch E-Ink display 264x176 px
+    Waveshare GSM/GPRS/GNSS/Bluetooth HAT (Prepaid SIM card Provider Network O2)
+    2x 1 channel relay 5V/230V
+    Yeeco DC/DC Converter 8-50V 12V/24V/36V/48V to 5V3A / 15W Watertight
+    Self-designed housing made of PLA
+    Cable, solder, hot glue, mounting tape, etc.
+
+Scooter:
+
+    Xiaomi M365
