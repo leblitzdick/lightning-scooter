@@ -19,7 +19,7 @@ Here is a small video of the booking process:
 [![lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 
 
-##  [![streamrLogo](img/streamrLogo.png)](https://www.streamr.com/)[streamr](https://www.streamr.com/:
+##  [![streamrLogo](img/streamrLogo.png)](https://www.streamr.com/)[streamr](https://www.streamr.com/):
 
 In addition to my previous project, the lightning-bike, the lightning-scooter has an integration with streamr, an open-source 
 platform for the worldwide exchange of real-time data. Now every time you make a booking, data about the lightning-scooter is 
