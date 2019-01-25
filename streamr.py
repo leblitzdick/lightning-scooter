@@ -69,13 +69,13 @@ def killppd():
   
 def uploadToStreamr():
 
-  url     = "https://www.streamr.com/api/v1/streams/FypPjVmYQKWQ2MOxwUBBhA/data"
+  url     = "https://www.streamr.com/api/v1/streams/xxxxxxxxxxxxxxxxxxxxxA/data"
   payload = json.dumps(streamr_stream)
   
   headers = {
-    'Authorization': "token KolOfsdCSWa_oFDDZCo1TgmqZK7SuFROa--P1_A3syjQ",
+    'Authorization': "token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     'cache-control': "no-cache",
-    'Postman-Token': "c06734cc-f143-4b6c-b873-a63d66770898"
+    'Postman-Token': "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   }
   response = requests.request("POST", url, data=payload, headers=headers)
 
@@ -147,10 +147,8 @@ def readBluetoothDataM365():
           streamr_stream["frame_temperature"]= str(temperature / 10.) +' C'
 
 
-  #my OnePlus 5T
-  #address = "94:65:2D:C2:A5:DD"
-  #address = "AA:BB:CC:DD:EE:FF"
-  address = "FE:BF:7C:5C:B7:89"
+  #address bluetooth scooter
+  address = "FF:FF:FF:FF:FF:FF"
   requester = Requester(address, False)
   
   try:
