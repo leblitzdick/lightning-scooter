@@ -41,7 +41,7 @@ Bei jeder neuen Miete wird nun Informationen zu stream übertragen, dieser beinh
 
 ![stream](img/stream.png)
 
-In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten läßt sich mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich z.B. über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun ein z.B. ein Bewegungsprofil erzeugen. 
+In einem Testlauf habe ich insgesamt 4x hintereinander den scooter gemietet und jedes mal wurden  die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten läßt sich mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegen welches die Daten aus dem stream sammelt. Es nun möglich über das Map Modul die GPS Daten zu visualisieren, sodas man die Orte der Miete anzeigen kann. Da Datum und Uhrzeit erfaßt werden kann man nun z.B. ein Bewegungsprofil erzeugen. 
 
 ![canvas](img/canvas.png)
 
@@ -53,7 +53,7 @@ Die Relais zur Steuerung der Stromzufuhr werden durch die GPIOs des raspberrypi 
 Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Menüsteuerung zur Verfügung stellt. Diese werden ebenfalls über die GPIOs des raspberrypi abgefragt. Das e-paper Display hat den Vorteil das es im Anzeigemodus so gut wie keinen Strom verbraucht sondern nur wenn sich der Bildinhalt ändert. Es hat einen hohen Kontrast ist auch an sonnigen Tage gut ablesbar. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.
 
 
-Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im oberen Bild ist er zu sehen, damit der Konverter nicht den Akkus entlädt ist ein Schalter verbaut der ihm von Akku trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das Schalen des Stroms zuständig sind. 
+Für die Stromzufuhr des Raspberry Pi war es nötig einen DC/DC Konverter zu verbauen der aus den 42V des Scooter Akkus die erforderlichen 5V bereitstellt. Im unteren Bild ist er zu sehen, damit der Konverter nicht den Akkus entlädt ist ein Schalter verbaut der ihn von Akku trennt. In diesem Bild sind auch die beiden blauen Relais zu erkennen welche für das Schalen des Stroms zuständig sind. 
 
 ![scooter-inside](img/scooter-inside.png)
 
