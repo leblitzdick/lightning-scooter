@@ -86,8 +86,7 @@ relatively tough with approx. 6 sec., but only 2 steps/pictures are needed to co
 
 For the power supply of the Raspberry Pi it was necessary to install a DC/DC converter which provides the required 5V from the 
 42V of the scooter battery. In the lower picture you can see it, so that the converter does not discharge the battery, a switch
-is installed which separates it from the current. In this picture you can also see the two blue relays which are responsible for
-switching the current.
+is installed which separates it from the current. In this picture you can also see the two blue relays which are responsible for switching the main power. 
 
 ![scooter-inside](img/scooter-inside.png)
 
