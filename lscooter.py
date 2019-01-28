@@ -150,7 +150,9 @@ def enjoyYourRide():
 def main():
 
     welcome = True
-        
+    
+    initGPS()
+      
     while True:
         key1state = GPIO.input(key1)
         key2state = GPIO.input(key2)
