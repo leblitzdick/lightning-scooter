@@ -132,7 +132,10 @@ def startPppd():
 def stopPppd():
     os.system("/usr/bin/killall pppd")
 
-    
+#initialize GPS port                                                                                                         
+def initGPS():
+    os.system("/usr/bin/python /root/lscooter/gps.py")
+
 
 # display "Welcome to lightning scooter" 
 def displayWelcomeScreen():
