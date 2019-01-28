@@ -130,10 +130,10 @@ def readBluetoothDataM365():
             streamr_stream["distance_left"]= str(distance_left[0] / 100.) + ' km'
           elif address == TRIP_INFO:
             error, warning, flags, workmode, battery, speed, speed_average = unpack('<HHHHHHH', payload[6:20])
-            print 'Current speed:', speed / 100., 'km/h'
-            streamr_stream["current_speed"]= str(speed / 100.) + ' km/h'
-            print 'Average speed:', speed_average / 100., 'km/h'
-            streamr_stream["average_speed"]= str(speed_average / 100.) + ' km/h'
+            print 'Current speed:', speed / 1000., 'km/h'
+            streamr_stream["current_speed"]= str(speed / 1000.) + ' km/h'
+            print 'Average speed:', speed_average / 1000., 'km/h'
+            streamr_stream["average_speed"]= str(speed_average / 1000.) + ' km/h'
         elif data_type == BATTERY_TO_MASTER:
           if address == BATTERY_INFO:
             capacity_left, battery_percent, current, voltage, battery_temperature1, battery_temperature2 \
