@@ -76,7 +76,7 @@ Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüss
 ![inside](img/inside.png)
 
 
-Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender Node installiert ist. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungsvorgänge umzusetzen.
+Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender node installiert ist. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungsvorgänge umzusetzen.
 
 Auf beiden Raspberry Pi Systemen ist die aktuellen raspbian buster lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python geschrieben.
 
