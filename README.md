@@ -19,15 +19,15 @@ Here is a small video of the booking process:
 [![lscooter-video](https://img.youtube.com/vi/Japhx4_71Qo/0.jpg)](https://www.youtube.com/watch?v=Japhx4_71Qo)
 
 
-## streamr:
+## [streamr](https://www.streamr.com/):
 
 In addition to my previous project, the [lightning-bike](https://github.com/leblitzdick/lightning-bike), the lightning-scooter
-has an integration with [streamr](https://www.streamr.com/), an open-source platform for the worldwide exchange of real-time 
+has an integration with streamr, an open-source platform for the worldwide exchange of real-time 
 data. Now every time you make a booking, data about the lightning-scooter is transmitted to the 
-[streamr](https://www.streamr.com/) network, including date, location, battery charge status and much more.
+streamr network, including date, location, battery charge status and much more.
 
 It is thus possible to document the use of the lightning-scooter and to receive information about the scooter online via the 
-[streamr](https://www.streamr.com/) platform at any time.
+streamr platform at any time.
 
 The following information is transferred to streamr during every new rental process, in the next picture you can see the content
 of the stream:
@@ -35,7 +35,7 @@ of the stream:
 ![stream](img/stream.png)
 
 
-In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to [streamr](https://www.streamr.com/). From this data I created a canvas with the [streamr](https://www.streamr.com/) editor which collects
+In a test run I rented the scooter 4 times and then drove 1 minute, each time the status information was sent to streamr. From this data I created a canvas with the streamr editor which collects
 the data from the stream. It is now possible to visualize the GPS data in the canvas via the map module, so that the locations 
 of the rent can be displayed. Since also date and time can be captured now e.g. motion profiles can be generated.
 
