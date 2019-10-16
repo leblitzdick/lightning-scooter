@@ -17,17 +17,17 @@ Hier ein kleines Video vom Buchungsvorgang:
 
 
 
-## streamr:
+## [streamr](https://www.streamr.com/):
 
-Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit [streamr](https://www.streamr.com/), einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das [streamr](https://www.streamr.com/) Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezustand und einiges mehr.
+Zusätzlich zu meinen vorherigen Projekt, dem [lightning-bike](https://github.com/leblitzdick/lightning-bike), gibt es beim lightning-scooter eine Integration mit streamr, einer open-source Plattform für den weltweiten Austausch von Echtzeitdaten. Es werden nun bei jedem Buchungsvorgang Daten über den lightning-scooter an das streamr Netzwerk übermittelt u.a. Datum, Standort, Akku Ladezustand und einiges mehr.
 
-Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die [streamr](https://www.streamr.com/) Plattform Informationen über den scooter zu erhalten.
+Es ist somit möglich die Nutzung des lightning-scooters zu dokumentieren und jederzeit online über die streamr Plattform Informationen über den scooter zu erhalten.
 
-Bei jedem neuen Mietvorgang werden folgende Informationen zu [streamr](https://www.streamr.com/) übertragen, im nächsten Bild kann man den Inhalt des streams sehen:
+Bei jedem neuen Mietvorgang werden folgende Informationen zu streamr übertragen, im nächsten Bild kann man den Inhalt des streams sehen:
 
 ![stream](img/stream.png)
 
-In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an [streamr](https://www.streamr.com/) übermittelt. Aus diesen Daten habe ich dann mit dem [streamr](https://www.streamr.com/) Editor ein canvas anlegt welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, so das man die Orte der Miete anzeigen kann. Da auch Datum und Uhrzeit erfasst werden können nun z.B. Bewegungsprofile erzeugt werden. 
+In einem Testlauf habe ich nun insgesamt 4x den scooter gemietet und dann 1 Minute gefahren, jedes mal wurden die Statusinformationen an streamr übermittelt. Aus diesen Daten habe ich dann mit dem streamr Editor ein canvas anlegt welches die Daten aus dem stream sammelt. Es nun möglich im canvas über das Map Modul die GPS Daten zu visualisieren, so das man die Orte der Miete anzeigen kann. Da auch Datum und Uhrzeit erfasst werden können nun z.B. Bewegungsprofile erzeugt werden. 
 
 ![canvas](img/canvas.png)
 
@@ -41,7 +41,7 @@ Der Client startet nach dem Bootvorgang automatisch das Programm auf dessen Star
 ![main](img/main.png)
 
 
-Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden aktuelle Status Daten des scooter's per Bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die gesammelten Informationen werden an die [streamr](https://www.streamr.com/) Plattform übermittelt. 
+Der Kunde wählt nun die gewünschte Zeit der Miete und das Programm ermittel als erstes die genaue Position des scooters per GPS.  Danach werden aktuelle Status Daten des scooter's per Bluetooth ausgelesen. Es wird dann eine Internetverbindung hergestellt und die gesammelten Informationen werden an die streamr Plattform übermittelt. 
 
 Im zweiten Schritt wird eine Zahlungsaufforderung (invoice) über den geforderten Betrag generiert, dieser wird mittels [lightning-charge](https://github.com/ElementsProject/lightning-charge) an den lightning node übermittelt. Der Client bekommt die Zahlunginformationen vom lightning node zurück und generiert daraus einen qr-code welcher dem Kunden auf dem Display angezeigt wird. 
 
@@ -76,9 +76,9 @@ Hier kann man die Verkabelung erkennen die vom e-paper Display zu den Anschlüss
 ![inside](img/inside.png)
 
 
-Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem der pseudo Node [sPRUNED](https://github.com/gdassori/spruned) die Bitcoin Blockchain vorhält und ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender lightning node. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungsvorgänge umzusetzen.
+Auf der Serverseite gibt es einen Raspberry Pi 3B auf dem ein auf [c-lightning](https://github.com/ElementsProject/lightning) basierender Node installiert ist. Für die Steuerung des lightning nodes wird die API [lightning-charge](https://github.com/ElementsProject/lightning-charge) verwendet mit ihr ließ sich sehr einfach die Programmierung der Bezahlungsvorgänge umzusetzen.
 
-Auf beide Raspberry Pi Systemen ist die aktuellen raspbian strech lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python geschrieben.
+Auf beiden Raspberry Pi Systemen ist die aktuellen raspbian buster lite Distribution installiert. Das eigentlich Programm zur Steuerung des lightning-scooter ist in python geschrieben.
 
 
 ### Bauteile Server:
