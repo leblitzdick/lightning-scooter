@@ -1,4 +1,4 @@
-## ⚡lightning⚡ payable e-scooter with  [![streamrLogo](img/streamrLogo.png)](https://www.streamr.com/)[streamr](https://www.streamr.com/) support
+## ⚡lightning⚡ payable e-scooter
 
 The lightning-scooter is an e-scooter whose electric drive can be booked for a certain period of time. For the payment Bitcoin
 Lightning is used. You choose on the display how long you want to drive, get a qr-code generated which you scan with a mobile 
