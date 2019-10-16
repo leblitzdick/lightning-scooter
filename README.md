@@ -56,7 +56,7 @@ collected information is transmitted to the [streamr](https://www.streamr.com/) 
 In the second step, an invoice is generated for the requested amount, which is transmitted to the lightning node via [lightning-charge](https://github.com/ElementsProject/lightning-charge). The client gets the payment information back from the lightning
 node and generates a qr-code which is shown to the customer on the display.
 
-The customer now has 60 seconds to scan the qr-code with his lightning APP in his mobile phone and then pay th invoice. During
+The customer now has 60 seconds to scan the qr-code with his lightning APP in his mobile phone and then pay the invoice. During
 this time the client tests the lightning node to see if the invoice is marked as paid.
 
 If the payment is not confirmed within 60 seconds, the data is discarded and the program returns to the start screen. Here you
